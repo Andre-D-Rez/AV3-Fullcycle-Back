@@ -1,8 +1,6 @@
 services:
   backend:
-    build:
-      context: ./
-      dockerfile: Dockerfile
+    image: andredrezende/av3-fullcycle-2:backend-v1
     environment:
       POSTGRES_HOST: database
       POSTGRES_PORT: ${POSTGRES_PORT}
